@@ -1,0 +1,11 @@
+<h1>Profiles</h1>
+
+<h2>Residents</h2>
+{% for resident in residents %}
+<p>{{ resident.user.username }}</p>
+{% endfor %}
+
+<h2>Staff</h2>
+{% for staff_member in staff %}
+<p>{{ staff_member.user.username }}</p>
+{% endfor %}
